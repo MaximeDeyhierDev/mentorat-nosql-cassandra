@@ -1,3 +1,6 @@
+## subject : Mentorat NoSql
+## author : Maxime Deyhier
+
 import time
 # Debut du decompte du temps
 start_time = time.time()
@@ -31,7 +34,6 @@ for fichier in files:
         if not output:
             continue
             
-      #  sys.exit()
         [(user, timestamp, protocole, linktarget, statuscode, endingvalue)] = output
         #On remplit le dictionnaire
         res["user_id"] = uuid.uuid1()
