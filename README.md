@@ -11,7 +11,7 @@ sudo apt install python3-pip
 pip3 install cassandra-driver
 
 
-
+Pour acceder au shell de Cassandra, il faut taper cqlsh dans le terminal
 
 
 1/ Créer un Keyspace
