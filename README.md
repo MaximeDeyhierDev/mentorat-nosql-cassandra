@@ -2,7 +2,7 @@
 Premiers pas avec cassandra. Dans ce repo ce trouve le script de nettoyage et d'ingesion des données ainsi que les fichiers sources.
 
 //J'ai eu pas mal de probleme avec la version 2.7 de python, donc je suis passé a la v3
-sudo apt-get install python3
+##sudo apt-get install python3
 
 //installation de pip pour les imports
 sudo apt install python3-pip
