@@ -1,20 +1,20 @@
 # mentorat-nosql-cassandra
 Premiers pas avec cassandra. Dans ce repo ce trouve le script de nettoyage et d'ingesion des données ainsi que les fichiers sources.
 
-//J'ai eu pas mal de probleme avec la version 2.7 de python, donc je suis passé a la v3
-##sudo apt-get install python3
+*J'ai eu pas mal de probleme avec la version 2.7 de python, donc je suis passé a la v3*
+sudo apt-get install python3
 
-//installation de pip pour les imports
+*installation de pip pour les imports*
 sudo apt install python3-pip
 
-//installation de cassandra-driver
+*installation de cassandra-driver*
 pip3 install cassandra-driver
 
 
-Pour acceder au shell de Cassandra, il faut taper cqlsh dans le terminal
+*Pour acceder au shell de Cassandra, il faut taper **cqlsh** dans le terminal*
 
 
-1/ Créer un Keyspace
+# 1/ Créer un Keyspace
 
 Il s'agit d'une étape obligatoire. Si on pouvait faire une comparaison avec le SQL, il s'agit d'une base.
 cqlsh.> CREATE KEYSPACE monKeySpace
@@ -23,7 +23,7 @@ WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
 source:
 https://www.tutorialspoint.com/cassandra/cassandra_create_keyspace.htm
 
-2/ Créer une table
+# 2/ Créer une table
 
 Maintenant que notre keyspace existe ( on peut lister les keyspaces avec DESCRIBE keyspaces;)
 Il faut créer une table...
@@ -37,5 +37,5 @@ note : UUID s'importe en general ( sur python par exemple) et celui ci va se cha
 source:
 https://docs.datastax.com/en/archived/cql/3.3/cql/cql_using/useCreateTable.html
 
-3/ CRUD
+# 3/ CRUD
 Pour toutes les commandes CRUD, c'est très proche du SQL
